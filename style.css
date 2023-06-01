@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+display: grid;
+grid-template-areas:
+"header header header"
+"menu main main"
+"footer footer footer";
+grid-template-columns: 20vw auto auto;
+grid-template-rows: 50px 100vh 50px;
+grid-gap: 5px;
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+}
+
+.main {
+    grid-area: main;
+    background-color: purple;
+
+}
+
+.menu{
+    grid-area:menu;
+    background-color: blue;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: greenyellow;
+
+}
